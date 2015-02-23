@@ -1,6 +1,6 @@
 {
   "name": "split-join",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Split -> Join Streams",
   "main": "dist/index.js",
   "author": "nhz.io",

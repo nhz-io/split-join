@@ -22,9 +22,8 @@ module.exports = class Join extends stream.Transform
   _transform: (packet, encoding, callback) ->
     try
       if chunksId = @join packet, encoding
-        @pushObject chunksId, 0
-      else
-        callback()
+        @pushObject chunksId
+      callback()
     catch error
       callback error
     return
