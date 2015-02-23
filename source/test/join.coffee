@@ -24,7 +24,7 @@ class TestJoin extends Join
     chunks.push chunk
     if (parseInt index) + 1 is (parseInt total)
       return id
-    undefined
+    return
 
 describe 'Join Stream', ->
   it 'should reassemble the original objects piped in from Split stream', (done) ->
@@ -42,7 +42,7 @@ describe 'Join Stream', ->
     join.push = -> false
     join.cache.add 'foo', 'bar'
     split.pipe join
-    split.write 'foobar'
     join.on 'error', (error) ->
       (new Error 'Cache is full').toString().should.be.equal error.toString()
       done()
+    split.write 'foobar'
