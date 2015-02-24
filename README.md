@@ -1,5 +1,9 @@
 # Split -> Join Streams
 
+[![Build Status][travis-image]][travis-url]
+
+[![NPM][npm-image]][npm-url]
+
 A pair of streams and a cache to facilitate serialization
 and deserialization of javascript objects.
 
@@ -69,10 +73,6 @@ socket.pipe join
 
 # the data coming from join will be the array from the sender
 ```
-
-[![Build Status][travis-image]][travis-url]
-
-[![NPM][npm-image]][npm-url]
 
 [travis-image]: https://travis-ci.org/nhz-io/split-join.svg
 [travis-url]: https://travis-ci.org/nhz-io/split-join
