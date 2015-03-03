@@ -7,3 +7,4 @@ build
 coffeelint.json
 gulpfile.*
 npm-debug.log
+*.sublime-*
