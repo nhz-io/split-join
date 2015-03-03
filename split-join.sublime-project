@@ -3,21 +3,21 @@
   [
     {
       "path": ".",
-      "folder_exclude_patterns": ["node_modules", "source", "build", "dist"],
-      "file_exclude_patterns": ["*.sublime-project*"],
-      "name": "Project"
+      "folder_exclude_patterns": ["node_modules", "source", "dist", "build"],
+      "file_exclude_patterns": ["*.sublime-*", "gulpfile.js", ".gitignore", ".npmignore", ".travis.yml"],
+      "name": "★ Project"
     },
     {
       "path": "source",
-      "name": "Source"
+      "name": "♥ Source"
     },
     {
       "path": "build",
-      "name": "Build"
+      "name": "☢ Build"
     },
     {
       "path": "dist",
-      "name": "Dist"
+      "name": "☯ Dist"
     }
   ],
   "settings":
