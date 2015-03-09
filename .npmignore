@@ -5,6 +5,8 @@ node_modules
 source
 build
 coffeelint.json
-gulpfile.*
+gulpfile.coffee
+gulpfile.js
 npm-debug.log
-*.sublime-*
+*.sublime-project
+*.sublime-workspace
