@@ -44,7 +44,7 @@ class Split extends (require 'split-join').Split
 class Join extends (require 'split-join').Join
   regexp = /^([^\s]+)\s+([^\s]+)\s+([^\s]+)\s*?\n\n(.+)$/m
   join: (packet) ->
-    if parsed = packet.match regexp
+    if parsed = packet.toString().match regexp
       [id, index, total, chunk] = parsed[1..4]
     unless chunks = @cache.get id
       if @cache.isFull then throw new Error 'Cache is full'
