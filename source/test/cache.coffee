@@ -1,5 +1,5 @@
 should = require 'should'
-Cache = require '../cache'
+Cache = (require '../index').Cache
 
 describe 'Cache', ->
   describe 'Instance', ->

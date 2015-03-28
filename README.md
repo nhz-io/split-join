@@ -20,13 +20,13 @@ and the result must be cached with unique ID string. Must return the ID.
 ### Join - abstract interface (stream)
 This class must be extended and `join(packet)` method must be implemented.
 At every execution the `join(packet)` method must create an array of the
-chunks which make up the original `obj` and cache it with unique ID string.
-If the array contains enough packets to reassemble the original `obj`, the
-`join(packet)` method must return the ID, otherwise, it must return `null`
+chunks which make up the original `obj` and cache it with unique ID string.  
+If the array contains enough packets to reassemble the original `obj`, the  
+`join(packet)` method must return the ID, otherwise, it must return `null`  
 
 ## Usage (CoffeeScript)
 
-### Implement Split
+### Implement Split (provided as requireable simple.Split)
 ```coffeescript
 class Split extends (require 'split-join').Split
   split: (obj) ->
@@ -39,7 +39,7 @@ class Split extends (require 'split-join').Split
     return chunksId
 ```
 
-### Implement Join
+### Implement Join (provided as requireable simple.Join)
 ```coffeescript
 class Join extends (require 'split-join').Join
   regexp = /^([^\s]+)\s+([^\s]+)\s+([^\s]+)\s*?\n\n(.+)$/m

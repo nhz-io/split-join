@@ -1,6 +1,6 @@
 should = require 'should'
 stream = require 'stream'
-Split = require '../split'
+Split = (require '../index').Split
 
 class TestSplit extends Split
   split: (obj) ->
